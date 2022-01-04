@@ -7,12 +7,16 @@ import {
 } from "react-router-dom";
 import Main from './components/Main';
 import Event from './components/Event';
+import Completed from './components/Completed';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
+        <Route path = "/completed">
+          <Completed />
+        </Route>
           <Route path = "/login">
 
           </Route>

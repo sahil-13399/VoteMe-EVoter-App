@@ -3,7 +3,14 @@ import Card from 'react-bootstrap/Card'
  import {Button} from 'react-bootstrap'
 
 
-function Candidate({name,desc,img}) {
+function Candidate({id,name,desc,img}) {
+
+    const handleVote = () => {
+        //Call backend to vote for current candidate id 
+        // Get the eventId using localStorage 
+        //history push to ThankYou page and save a token of Voted. 
+    }
+
     return (
         <div style = {{color : "black",margin : "20px"}}>
             {console.log("Hello Candidate")}
@@ -14,7 +21,7 @@ function Candidate({name,desc,img}) {
                     <Card.Text>
                         {desc}
                     </Card.Text>
-                    <Button variant="primary">Vote for Me</Button> 
+                    <Button onClick = {handleVote} variant="primary">Vote for Me</Button> 
                 </Card.Body>
             </Card>
         </div>
