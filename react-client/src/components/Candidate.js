@@ -1,14 +1,18 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
- import {Button} from 'react-bootstrap'
+import {Button} from 'react-bootstrap'
+import { useHistory } from 'react-router';
 
 
 function Candidate({id,name,desc,img}) {
 
+    const history = useHistory();
+
     const handleVote = () => {
         //Call backend to vote for current candidate id 
         // Get the eventId using localStorage 
-        //history push to ThankYou page and save a token of Voted. 
+        //history push to ThankYou page and save a token of Voted.
+        history.push("/completed")
     }
 
     return (

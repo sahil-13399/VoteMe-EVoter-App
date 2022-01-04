@@ -8,10 +8,10 @@ function Completed() {
     const history = useHistory();
 
     return (
-        <div>
+        <div style = {{padding : "200px", }}>
             <h1>Thank you for voting, Click button to go to the Home Page</h1>
             <Button onClick = {() => {
-                history.push("/completed")
+                history.push("/")
             }} variant="primary">Home Page</Button>
         </div>
     )

@@ -8,44 +8,53 @@ function Event() {
     useEffect(() => {
         setCandidateList([
             {
+                id : 1,
                 image : "",
                 name : "Sahil",
                 desc : "CEO"
             },
             {
+                id : 2,
                 image : "",
                 name : "Rahil",
                 desc : "CFO"
             },
             {
+                id : 3,
                 image : "",
                 name : "Tahil",
                 desc : "CTO"
             }, {
+                id : 4,
                 image : "",
                 name : "Sahil",
                 desc : "CEO"
             },
             {
+                id : 5,
                 image : "",
                 name : "Rahil",
                 desc : "CFO"
             },
             {
+                id : 6,
                 image : "",
                 name : "Tahil",
                 desc : "CTO"
             }, {
+                id : 7,
                 image : "",
                 name : "Sahil",
                 desc : "CEO"
             },
             {
+                id : 8,
                 image : "",
                 name : "Rahil",
                 desc : "CFO"
             },
             {
+                id : 9,
                 image : "",
                 name : "Tahil",
                 desc : "CTO"
