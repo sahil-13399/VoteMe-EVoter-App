@@ -16,15 +16,15 @@ function Main() {
         <div className='main_page'>
             <Form onSubmit={submitCallback}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>To vote, please type in the Event ID</Form.Label>
-                    <Form.Control type="text" placeholder="Enter Event ID" onChange={(e) => setId(e.target.value)}/>
+                    <Form.Label style = {{fontSize:'1.5em'}}>To vote, please type in the Event ID</Form.Label>
+                    <Form.Control style = {{width : '200px',margin:"auto"}} type="text" placeholder="Enter Event ID" onChange={(e) => setId(e.target.value)}/>
                 </Form.Group>
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
             </Form>
             <div className='new_vote'>
-                <h3>To create a new Voting event please Click <a href="" >here</a></h3>
+                <h3>To create a new Voting event please Click <a href="/login" >here</a></h3>
             </div>
         </div>
     )
