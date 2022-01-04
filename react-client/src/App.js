@@ -6,15 +6,20 @@ import {
   Route,
 } from "react-router-dom";
 import Main from './components/Main';
+import Event from './components/Event';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route path= "/login">
-    
+          <Route path = "/login">
+
           </Route>
+          <Route path = "/event">
+            <Event />
+          </Route>
+
           <Route path= "/">
             <Main />
           </Route>

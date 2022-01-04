@@ -3,12 +3,18 @@ import {useState,useEffect} from 'react'
 import './Main.css'
 import Form from 'react-bootstrap/Form'
 import {Button} from 'react-bootstrap'
+import { useHistory } from 'react-router';
+import { useDispatch } from 'react-redux';
+import {selectEventId } from '../app/eventSlice'
 
 function Main() {
-
+    const history = useHistory();
+    const dispatch = useDispatch();
     const [id, setId] = useState("");
     const submitCallback = (e) => {
         e.preventDefault();
+        localStorage.setItem('eventId', id);
+        history.push("/event");
         //Call backaend with Event ID
     }
 
